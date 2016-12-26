@@ -8,4 +8,4 @@ RUN \
   apk --purge del curl
 
 EXPOSE 8000
-CMD ["java", "-Djava.library.path=./DynamoDBLocal_lib", "-jar", "./DynamoDBLocal.jar"]
+CMD ["java", "-Djava.library.path=./DynamoDBLocal_lib", "-jar", "./DynamoDBLocal.jar", "-port", "8000"]
